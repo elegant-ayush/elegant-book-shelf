@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Shelf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>Elegant <span>Book</span> Shelf</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="my-shelf.html">My Shelf</a></li>
+          <li><a href="#">Contribute</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search for books..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <main>
+      <h2>Your Favorite Books</h2>
+      <div class="movie-list" id="movieList">
+        <!-- Favorite books will be listed here -->
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Call loadFavorites function when the page loads
+    window.onload = loadFavorites;
+  </script>
+</body>
+</html>

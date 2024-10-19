@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Book Shelf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>Elegant <span>Book</span> Shelf</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="my-shelf.html">My Shelf</a></li>
+          <li><a href="#">Contribute</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search for books..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="quote-section">
+        <div class="quote-card">
+          <h2>Today's Quote</h2>
+          <p>"There is more treasure in books than in all the pirate’s loot on Treasure Island." - Walt Disney</p>
+        </div>
+      </section>
+
+      <section class="book-categories">
+        <h2>New Arrivals</h2>
+        <div class="book-slider" id="newArrivals">
+          <!-- Book cards here (use JS to populate) -->
+        </div>
+      </section>
+
+      <section class="recommendations">
+        <h2>Good Morning, Recommended for You</h2>
+        <div class="book-slider" id="recommendedBooks">
+          <!-- Book cards here (use JS to populate) -->
+        </div>
+      </section>
+
+      <section class="borrow-history">
+        <h2>Borrow History</h2>
+        <div class="book-slider" id="borrowHistory">
+          <!-- Borrowed books will be listed here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
